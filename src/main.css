@@ -1,0 +1,228 @@
+/* icon-font */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.dis-none {
+  display: none;
+}
+
+/* dialog */
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#dialog {
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 3px 0px,
+    rgba(60, 64, 67, 0.15) 0px 4px 8px 3px;
+  min-width: 320px;
+  padding: 16px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#dialog .dialog-title {
+  font-family: "Segoe UI", "Roboto", arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+#dialog .dialog-input-wrapper .dialog-label {
+  color: rgb(95, 99, 104);
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+#dialog .dialog-input-wrapper input {
+  background-color: rgb(241, 243, 244);
+  color: rgb(32, 33, 36);
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 32px;
+  outline: none;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  width: calc(100% - 16px);
+}
+
+#dialog .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+#dialog .button-container button {
+  border: 1px solid rgb(218, 220, 224);
+  background-color: white;
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 32px;
+  padding: 0 16px;
+  border-radius: 4px;
+  color: rgb(26, 115, 232);
+  outline: none;
+}
+#dialog .button-container button:hover {
+  cursor: pointer;
+}
+#dialog .button-container button:disabled {
+  cursor: not-allowed;
+}
+#dialog .button-container button.finish {
+  color: white;
+  background-color: rgb(26, 115, 232);
+  border: none;
+  margin-left: 5px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.main {
+  padding-top: 50px;
+  color: #333333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.logo {
+  color: #4285f4;
+  font-size: 64px;
+  text-align: center;
+}
+
+.search-wrapper {
+  margin: 30px auto;
+  display: flex;
+  max-width: 560px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.search-wrapper input {
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  outline: none;
+}
+
+.search-wrapper .search-icon {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.collection {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.collection .item-container {
+  box-sizing: border-box;
+  width: 80px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.collection .item-container .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.mini-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collection .item-container .title {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.collection .item-container .title span {
+  line-height: 28px;
+}
+
+@media (max-width: 500px) {
+  .search-wrapper {
+    max-width: 100vw;
+    margin: 30px 20px;
+  }
+  /* .collection .item-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  } */
+}
+
+@media (min-width: 500px) {
+  .main {
+    margin-top: 200px;
+  }
+  .search-wrapper {
+    margin: 30px auto;
+  }
+  .collection {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .collection .item-container {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 112px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .collection .item-container:hover {
+    background-color: #f1f3f4;
+  }
+
+  .collection .item-container:hover .more {
+    display: block;
+  }
+}
