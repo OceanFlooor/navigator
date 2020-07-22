@@ -13,7 +13,7 @@ render()
 
 add.on("click", (e) => {
   e.stopPropagation()
-  let url = window.prompt("网址？")
+  let url = window.prompt("请输入添加的网址")
   if (url) {
     hashMap.push(handleUrl(url))
     setStorage()

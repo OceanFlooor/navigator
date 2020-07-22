@@ -131,7 +131,7 @@ var item = collection.find(".item-container:not(#add)");
 render();
 add.on("click", function (e) {
   e.stopPropagation();
-  var url = window.prompt("网址？");
+  var url = window.prompt("请输入添加的网址");
 
   if (url) {
     hashMap.push(handleUrl(url));
@@ -263,4 +263,4 @@ function setStorage() {
   });
 })();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.3a90d0b0.js.map
+//# sourceMappingURL=main.0a6ea6db.js.map
