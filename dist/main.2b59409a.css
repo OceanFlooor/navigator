@@ -122,7 +122,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
 }
-.search-wrapper input {
+.search-wrapper #search-input {
   border: none;
   padding: 5px 15px;
   font-size: 16px;
@@ -228,4 +228,4 @@ body {
 }
 
 
-/*# sourceMappingURL=main.62d3ea18.css.map */
+/*# sourceMappingURL=main.2b59409a.css.map */

@@ -128,6 +128,7 @@ var search = $(".search-icon");
 var searchInput = $("#search-input");
 var backdrop = $(".backdrop");
 var item = collection.find(".item-container:not(#add)");
+var issafariBrowser = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
 render();
 add.on("click", function (e) {
   e.stopPropagation();
@@ -263,4 +264,4 @@ function setStorage() {
   });
 })();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.0a6ea6db.js.map
+//# sourceMappingURL=main.82985f87.js.map

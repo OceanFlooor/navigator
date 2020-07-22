@@ -8,6 +8,8 @@ let search = $(".search-icon")
 let searchInput = $("#search-input")
 let backdrop = $(".backdrop")
 let item = collection.find(".item-container:not(#add)")
+let issafariBrowser =
+  /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)
 
 render()
 
